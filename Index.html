@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Monster Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Kawaii Monster Clicker</h1>
+        <div class="monster-display">
+            <img id="monster-img" src="monster1.png" alt="Милый монстр" class="monster-image">
+            <div id="monster-hp-bar-container">
+                <div id="monster-hp-bar"></div>
+            </div>
+            <p id="monster-name">Монстр: Пушистик</p>
+        </div>
+        <div class="stats">
+            <p>Очки: <span id="points">0</span></p>
+            <p>Урон за клик: <span id="damage">1</span></p>
+        </div>
+        <button id="click-button">Кликнуть и нанести урон</button>
+    </div>
+
+    <div class="rpg-elements">
+        <h2>Инвентарь и улучшения</h2>
+        <div class="inventory">
+            <h3>Инвентарь</h3>
+            <ul id="inventory-list">
+                <li class="inventory-item">
+                    <img src="sword.png" alt="Меч">
+                    <p>Деревянный меч (+2 урона)</p>
+                </li>
+            </ul>
+        </div>
+        <div class="upgrades">
+            <h3>Улучшения</h3>
+            <button id="upgrade-damage-btn">Увеличить урон (+10 очков)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
