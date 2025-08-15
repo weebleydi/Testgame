@@ -1,0 +1,118 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce4ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #4a148c;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff8e1;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #ffab91;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #d81b60;
+    text-shadow: 2px 2px #ffc107;
+}
+
+.monster-display {
+    position: relative;
+    padding: 20px;
+}
+
+.monster-image {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.monster-image:active {
+    transform: scale(0.95);
+}
+
+#monster-hp-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #ffcdd2;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #e57373;
+}
+
+#monster-hp-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #f44336;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+button {
+    background-color: #81c784;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #519657;
+    transition: all 0.1s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #66bb6a;
+}
+
+button:active {
+    box-shadow: 0 2px #519657;
+    transform: translateY(3px);
+}
+
+.rpg-elements {
+    background: #e1f5fe;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 5px solid #b3e5fc;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.inventory, .upgrades {
+    margin-top: 15px;
+}
+
+.inventory ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.inventory-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #b39ddb;
+}
+
+.inventory-item img {
+    width: 50px;
+    height: 50px;
+}
